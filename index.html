@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>clip</title>
+</head>
+<body>
+    <div class="container">
+        <div class="barra-lateral">
+            <div class="barra-lateral__logo barra-lateral--geral">
+                <img class="logo__img" src="https://cdn-icons.flaticon.com/png/512/2783/premium/2783290.png?token=exp=1637972683~hmac=5f247d3d8299e9cec67895befd0682ca" alt="">
+                <p class="logo__texto">Clip</p>
+            </div>
+            <div class="barra-lateral__dashboard barra-lateral--geral"> 
+                <img src="https://cdn-icons-png.flaticon.com/128/3408/3408612.png" alt=""> 
+                <p>Dashboard</p>
+            </div>
+            <div class="barra-lateral__clientes barra-lateral--geral">
+                <img src="https://cdn-icons.flaticon.com/png/512/561/premium/561845.png?token=exp=1637867443~hmac=b5a81b10aa727669b9c6cf94f0f0186a" alt="">
+                <p>Clientes</p>
+            </div>
+            <div class="barra-alteral__perfil barra-lateral--geral">
+                <img src="https://cdn-icons-png.flaticon.com/512/747/747376.png" alt="">
+                Perfil
+            </div>
+        </div>
+        <main class="conteudo-central">
+
+            <!-- plano de fundo da parte central -->
+            <div class="cor-de-fundo-superior"></div>
+            <div class="cor-de-fundo-inferior"></div>
+
+            <div class="conteudo-central__dados">
+                <div  class="dados__clientes dados__caixa">
+                    <div class="dados__texto">
+                        <p class="texto__titulo">Total de clientes</p>
+                        <p class="texto__numero">300</p>
+                    </div>
+                    <div class="dados__icon--background">
+                        <img class="icon__img" src="https://cdn-icons.flaticon.com/png/512/3308/premium/3308376.png?token=exp=1637957528~hmac=7daa0845eb3ea6b9b3fbcab254571cc9" alt="">
+                    </div> 
+                </div>
+                <div class="dados__ganhos dados__caixa">
+                    <div class="dados__texto">
+                        <p class="texto__titulo">Ganho bruto</p>
+                        <p class="texto__numero">1.000.000,00</p> 
+                    </div>
+                    <div class="dados__icon--background">
+                        <img class="icon__img" src="https://cdn-icons-png.flaticon.com/512/3037/3037156.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="container-canvas">
+                <canvas id="myChart"></canvas>
+            </div>
+            <!-- <div class="conteudo-central__grafico"></div> -->
+        
+        </main>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.min.js" integrity="sha512-GMGzUEevhWh8Tc/njS0bDpwgxdCJLQBWG3Z2Ct+JGOpVnEmjvNx6ts4v6A2XJf1HOrtOsfhv3hBKpK9kE5z8AQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="grafico.js"></script>
+
+    </div>
+</body>
+</html>
